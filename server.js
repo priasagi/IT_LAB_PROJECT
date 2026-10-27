@@ -190,7 +190,8 @@ function authenticateToken(req, res, next) {
   });
 }
 
-// GET LOGGED-IN USER PROFILE mod
+// GET LOGGED-IN USER PROFILE
+// GIT Server Modification
 app.get('/api/auth/me', authenticateToken, async (req, res) => {
   try {
     const [users] = await db.execute(
