@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+from flask import Flask
+app=Flask(__name__)
+@app.route("/")
+def home():
+     return "Flask backend is running!"
+if __name__=="__main__":
+=======
 from flask import Flask, request, jsonify
 import jwt
 import datetime
@@ -57,4 +65,5 @@ def protected(data):
     return jsonify({"message": f"Welcome, {data['username']}!", 
 "role": data["role"]})
 if __name__ == '__main__':
+>>>>>>> c858dfa2a6d531f6241e8549bf65214d00da49cd
     app.run(debug=True)
