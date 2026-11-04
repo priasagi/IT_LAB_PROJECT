@@ -34,7 +34,7 @@ export default function Dashboard() {
         const data = await response.json();
 
         if (!response.ok) {
-          throw new Error(data.message || 'Unable to load profile.');
+          throw new Error(data.message || 'Unable to Load Profile.');
         }
 
         if (!cancelled) {
@@ -63,7 +63,7 @@ export default function Dashboard() {
     localStorage.removeItem('authToken');
     navigate('/login', {
       replace: true,
-      state: { message: 'You have logged out.' }
+      state: { message: 'You have Logged Out.' }
     });
   }
 
@@ -83,7 +83,7 @@ export default function Dashboard() {
         <h1>Welcome, {user.name}!</h1>
 
         <p>
-          You have successfully logged in to AI Workflow.
+          You have successfully logged in to AI-Workflow.
         </p>
 
         <div className="profile-details">
