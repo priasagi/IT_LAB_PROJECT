@@ -368,3 +368,107 @@ main { min-height: 70vh; }
   .nav-register { padding: 9px 11px; }
   .nav-links { gap: 18px; }
 }
+<<<<<<< HEAD
+
+/* Personal data security scanner */
+.security-scanner {
+    margin-top: 32px;
+    padding: clamp(20px, 4vw, 32px);
+    text-align: left;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+
+.security-scanner h2 {
+    margin: 6px 0 10px;
+    color: var(--ink);
+    font-size: clamp(1.35rem, 3vw, 1.8rem);
+    line-height: 1.3;
+}
+
+.security-scanner > p {
+    color: var(--muted);
+}
+
+.file-upload-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 22px;
+    padding: 30px 16px;
+    text-align: center;
+    border: 2px dashed var(--primary);
+    border-radius: 12px;
+    background: var(--page);
+    cursor: pointer;
+    transition: background .2s ease, border-color .2s ease;
+}
+
+.file-upload-area:hover {
+    background: #efedff;
+    border-color: var(--primary-dark);
+}
+
+.file-upload-area input[type="file"] {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 8px;
+}
+
+.file-upload-area span:last-of-type {
+    color: var(--muted);
+    font-size: .88rem;
+}
+
+.upload-icon {
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.security-warning,
+.security-safe {
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.security-warning {
+    color: #9b1c1c;
+    background: #fff0f0;
+    border: 1px solid #fecaca;
+}
+
+.security-safe {
+    color: #176534;
+    background: #eaf8ee;
+    border: 1px solid #bbebc8;
+}
+
+.security-warning h3,
+.security-safe h3 {
+    margin-top: 0;
+}
+
+.security-warning p,
+.security-safe p {
+    margin-bottom: 0;
+}
+
+.security-warning li {
+    margin-top: 6px;
+}
+
+@media (max-width: 600px) {
+    .security-scanner {
+        padding: 18px;
+    }
+
+    .file-upload-area {
+        padding: 24px 12px;
+    }
+}
+=======
+>>>>>>> 838a9db3ccb3d9c24dfd0694c14adecd618a0cfc

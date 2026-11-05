@@ -31,7 +31,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+<<<<<<< HEAD
+    "lint": "oxlint",
+=======
     "lint": "eslint .",
+>>>>>>> 838a9db3ccb3d9c24dfd0694c14adecd618a0cfc
     "preview": "vite preview"
   },
   "dependencies": {
@@ -40,6 +44,13 @@
     "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
+<<<<<<< HEAD
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "vite": "^8.3.0"
+=======
     "@babel/core": "^7.29.7",
     "@eslint/js": "^10.0.1",
     "@rolldown/plugin-babel": "^0.2.3",
@@ -52,6 +63,10 @@
     "eslint-plugin-react-refresh": "^0.5.4",
     "globals": "^17.11.0",
     "vite": "^8.2.2"
+<<<<<<< HEAD
+>>>>>>> 838a9db3ccb3d9c24dfd0694c14adecd618a0cfc
+=======
 >>>>>>> c858dfa2a6d531f6241e8549bf65214d00da49cd
+>>>>>>> origin/main
   }
 }
