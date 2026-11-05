@@ -44,7 +44,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="hero-description">
-          Explore how AI-assisted tools can help you design,
+          Explore How AI-assisted Tools can Help you Design,
           develop, debug and improve modern web applications.
         </p>
 
