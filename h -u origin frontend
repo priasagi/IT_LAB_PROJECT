@@ -1,0 +1,12 @@
+* [33mf3776f0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfrontend[m[33m)[m modify_frontend
+* [33m1ca5ab0[m modification
+* [33mf9b4e75[m[33m ([m[1;31morigin/frontend[m[33m)[m html_modify
+[32m|[m * [33m60d3f3e[m[33m ([m[1;31morigin/backend-new[m[33m)[m mod_serverd
+[32m|[m * [33ma8f0755[m Add backend files
+[32m|[m * [33m9769b9a[m db_file
+[32m|[m * [33mca1f5b9[m server_file
+[32m|[m * [33m22d8ac5[m serverfile
+[32m|[m *   [33mc858dfa[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #9 from priasagi/backend
+[32m|[m [34m|[m[35m\[m  
+[32m|[m [34m|[m *   [33m4ddc4ee[m[33m ([m[1;31morigin/backend[m[33m)[m Merge pull request #2 from priasagi/main
+[32m|[m [34m|[m [36m|[m[1;31m\[m  

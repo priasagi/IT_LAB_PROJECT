@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 838a9db3ccb3d9c24dfd0694c14adecd618a0cfc
 export default function HeroSection() {
   function handleClick() {
     document.getElementById('features')?.scrollIntoView({
@@ -9,6 +12,7 @@ export default function HeroSection() {
   return (
     <section className="hero" id="home">
       <div className="hero-content">
+<<<<<<< HEAD
         <p className="eyebrow">
           AI WORKFLOW · FILE SECURITY
         </p>
@@ -31,8 +35,28 @@ export default function HeroSection() {
           onClick={handleClick}
         >
           Explore Security Features →
+=======
+        <p className="eyebrow">BUILD SMARTER WITH AI</p>
+
+        <h1>
+          Enhance Your Workflow
+          <span> with AI</span>
+        </h1>
+
+        <p className="hero-description">
+          Explore how AI-assisted tools can help you design,
+          develop, debug and improve modern web applications.
+        </p>
+
+        <button className="primary-button" onClick={handleClick}>
+          Explore Features →
+>>>>>>> 838a9db3ccb3d9c24dfd0694c14adecd618a0cfc
         </button>
       </div>
     </section>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 838a9db3ccb3d9c24dfd0694c14adecd618a0cfc

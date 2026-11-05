@@ -368,6 +368,7 @@ main { min-height: 70vh; }
   .nav-register { padding: 9px 11px; }
   .nav-links { gap: 18px; }
 }
+<<<<<<< HEAD
 
 /* Personal data security scanner */
 .security-scanner {
@@ -469,3 +470,5 @@ main { min-height: 70vh; }
         padding: 24px 12px;
     }
 }
+=======
+>>>>>>> 838a9db3ccb3d9c24dfd0694c14adecd618a0cfc

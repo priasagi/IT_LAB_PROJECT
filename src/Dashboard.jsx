@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const API_URL =
   import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
+<<<<<<< HEAD
 const MAX_FILE_SIZE = 2 * 1024 * 1024; // 2 MB
 
 const ALLOWED_EXTENSIONS = [
@@ -72,6 +73,12 @@ export default function Dashboard() {
   const [scanError, setScanError] = useState('');
   const [findings, setFindings] = useState(null);
   const [selectedFileName, setSelectedFileName] = useState('');
+=======
+export default function Dashboard() {
+  const navigate = useNavigate();
+  const [user, setUser] = useState(null);
+  const [message, setMessage] = useState('Loading your profile...');
+>>>>>>> 838a9db3ccb3d9c24dfd0694c14adecd618a0cfc
 
   useEffect(() => {
     const token = localStorage.getItem('authToken');
@@ -89,17 +96,26 @@ export default function Dashboard() {
           `${API_URL}/api/auth/me`,
           {
             headers: {
+<<<<<<< HEAD
               Authorization: `Bearer ${token}`,
             },
+=======
+              Authorization: `Bearer ${token}`
+            }
+>>>>>>> 838a9db3ccb3d9c24dfd0694c14adecd618a0cfc
           }
         );
 
         const data = await response.json();
 
         if (!response.ok) {
+<<<<<<< HEAD
           throw new Error(
             data.message || 'Unable to load profile.'
           );
+=======
+          throw new Error(data.message || 'Unable to load profile.');
+>>>>>>> 838a9db3ccb3d9c24dfd0694c14adecd618a0cfc
         }
 
         if (!cancelled) {
@@ -110,6 +126,7 @@ export default function Dashboard() {
         if (cancelled) return;
 
         localStorage.removeItem('authToken');
+<<<<<<< HEAD
 
         navigate('/login', {
           replace: true,
@@ -117,6 +134,11 @@ export default function Dashboard() {
             message:
               error.message || 'Unable to load your profile.',
           },
+=======
+        navigate('/login', {
+          replace: true,
+          state: { message: error.message }
+>>>>>>> 838a9db3ccb3d9c24dfd0694c14adecd618a0cfc
         });
       }
     }
@@ -128,6 +150,7 @@ export default function Dashboard() {
     };
   }, [navigate]);
 
+<<<<<<< HEAD
   async function handleFileChange(event) {
     const file = event.target.files?.[0];
 
@@ -185,6 +208,13 @@ export default function Dashboard() {
       state: {
         message: 'You have logged out.',
       },
+=======
+  function handleLogout() {
+    localStorage.removeItem('authToken');
+    navigate('/login', {
+      replace: true,
+      state: { message: 'You have logged out.' }
+>>>>>>> 838a9db3ccb3d9c24dfd0694c14adecd618a0cfc
     });
   }
 
@@ -208,6 +238,7 @@ export default function Dashboard() {
         </p>
 
         <div className="profile-details">
+<<<<<<< HEAD
           <p>
             <strong>Name:</strong> {user.name}
           </p>
@@ -335,6 +366,11 @@ export default function Dashboard() {
               )}
             </div>
           )}
+=======
+          <p><strong>Name:</strong> {user.name}</p>
+          <p><strong>Username:</strong> {user.username}</p>
+          <p><strong>Email:</strong> {user.email}</p>
+>>>>>>> 838a9db3ccb3d9c24dfd0694c14adecd618a0cfc
         </div>
 
         <button
